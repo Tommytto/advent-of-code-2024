@@ -1,0 +1,18 @@
+# dune exec ./main.exe
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/tito/.cache/dune/db
+# Workspace root: /Users/tito/own/advent-of-code-2024/ocaml/day1
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/tito/.opam/default/bin/ocamlc.opt -config > /var/folders/0p/9kthw9750t16qlvm0dj_7w500000gn/T/dune_e61e78_output
+$ (cd _build/default && /Users/tito/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .main.eobjs/byte -I .main.eobjs/native -I /Users/tito/.opam/default/lib/bytes -I /Users/tito/.opam/default/lib/csv -I /Users/tito/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -o .main.eobjs/native/dune__exe__Main.cmx -c -impl main.ml)
+$ (cd _build/default && /Users/tito/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o main.exe /Users/tito/.opam/default/lib/csv/csv.cmxa /Users/tito/.opam/default/lib/ocaml/str/str.cmxa .main.eobjs/native/dune__exe__Main.cmx)

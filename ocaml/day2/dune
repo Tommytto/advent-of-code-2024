@@ -1,0 +1,10 @@
+(executable
+ (name puzzle_run)
+ (modules puzzle_run)
+ (libraries csv puzzle))
+
+(library
+ (name puzzle)
+ (modules puzzle)
+ (inline_tests)
+ (preprocess (pps ppx_inline_test)))
