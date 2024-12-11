@@ -1,0 +1,19 @@
+(executable
+ (name puzzle_bin)
+ (modules puzzle_bin)
+ (libraries csv puzzle utils))
+
+(library
+ (name puzzle)
+ (modules puzzle)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test))
+ (libraries utils str ppx_deriving.show))
+
+(library
+ (name utils)
+ (modules utils)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test)))
