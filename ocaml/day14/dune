@@ -8,13 +8,19 @@
  (modules puzzle)
  (inline_tests)
  (preprocess
-  (pps ppx_inline_test ppx_deriving.show))
+  (pps
+   ppx_inline_test
+   ppx_compare
+   ppx_deriving.show
+   ppx_deriving.make
+   ppx_hash
+   ppx_sexp_conv))
  (libraries utils str re core))
 
 (library
  (name utils)
  (modules utils)
  (inline_tests)
- (libraries str re base)
+ (libraries str re core)
  (preprocess
   (pps ppx_inline_test)))

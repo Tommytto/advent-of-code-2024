@@ -2,5 +2,6 @@
     "ocaml.sandbox": {
         "kind": "global"
     },
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "editor.minimap.scale": 2
 }
