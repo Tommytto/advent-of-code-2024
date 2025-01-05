@@ -1,0 +1,5 @@
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+log.txt filter=lfs diff=lfs merge=lfs -text
+log2.tx filter=lfs diff=lfs merge=lfs -text
+log2.txt filter=lfs diff=lfs merge=lfs -text
